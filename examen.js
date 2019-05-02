@@ -1,5 +1,5 @@
 let random = () =>{
-	let prob = [1, 1, -1, -1, 2, 2, 3, 3]
+	let prob = [1, 1, -1, -1, 2, 2, 2, 2, 3, 3]
 	let num = Math.floor(Math.random() * prob.length)
 	return prob[num]
 }
