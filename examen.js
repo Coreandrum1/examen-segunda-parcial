@@ -21,9 +21,7 @@ class Player {
 	move(){
 		let pos = this.getPosition() + random()
 		this.setPosition(pos)
-		if (p1.getPosition() >= 100 || p2.getPosition() >= 100) {
-			console.log(`ganó ${p1.getName()}`)
-		}
+		
 	}	
 
 }
@@ -41,6 +39,12 @@ do{
 	console.log(`${p2.getName()} está en ${p2.getPosition()}`)
 	p1.move()
 	p2.move()
+	if (p1.getPosition() >= 100 || p2.getPosition() >= 100) {
+			console.log(`ganó ${p1.getName()}`)
+		}
+	else if (p2.getPosition() >= 100) {
+			console.log(`ganó ${p2.getName()}`)
+		}
 }while(p1.getPosition() < 100 && p2.getPosition() < 100)
 
 
